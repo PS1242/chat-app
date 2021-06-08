@@ -1,0 +1,54 @@
+:root {
+  --chat-container-width: 35%;
+}
+* {
+  font-family: "Poppins", sans-serif;
+}
+.body-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: aliceblue;
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #ffffff;
+  border-radius: 2px;
+  height: 60%;
+  width: var(--chat-container-width);
+  box-shadow: var(--box-shadow);
+}
+/*
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .outerContainer {
+    height: 100%;
+  }
+
+  .container {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 1200px) {
+  .container {
+    width: 60%;
+  }
+}
+*/
+@media screen and (max-width: 800px) {
+  :root {
+    --chat-container-width: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  :root {
+    --chat-container-width: 70%;
+  }
+}
